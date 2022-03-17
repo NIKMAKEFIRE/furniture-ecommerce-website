@@ -23,6 +23,37 @@ $(function () {
         slidesToScroll: 8,
         dots: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 1370,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                }
+            },
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 841,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 551,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+     
+        ]
     })
 
     $('.article-slider__box').slick({
